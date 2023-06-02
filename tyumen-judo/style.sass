@@ -1,0 +1,274 @@
+*
+	scrollbar-color: #0099FF #DC3820
+	scrollbar-width: thin
+*::-webkit-scrollbar
+	height: 0.5em
+	width: 0.5em
+*::-webkit-scrollbar-track
+	background: #DC3820
+*::-webkit-scrollbar-thumb
+	background-color: #0099FF
+
+html, body
+	margin: 0
+	padding: 0
+	width: 100%
+	min-width: 320px
+	height: 100%
+	font-family: Roboto, Tahoma,  Verdana, Geneva, Helvetica, sans-serif
+	font-size: 12pt
+	color: #2B2A29
+	background: #FFFFFF
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	text-rendering: optimizeLegibility
+img
+	border: none
+	max-width: 100%
+	height: auto
+a
+	color: #0099FF
+	text-decoration: none
+	&:hover
+		color: #DC3820
+		text-decoration: underline
+h1, h2, h3, h4, h5, h6
+	margin: 0.5em 0.2em
+	padding: 0.2em 0.5em
+	color: #0099FF !important
+	text-align: center
+	font-weight: normal
+	text-transform: uppercase
+	font-weight: normal
+	border-bottom: 0.1em dotted #0099FF
+	display: inline-block
+h1
+	font-size: 1.4em
+hr
+	border: #0099FF 0.1em dashed
+input, textarea, select
+	margin: 0
+	padding: 0.2em !important
+	font-family: Roboto, Tahoma,  Verdana, Geneva, Helvetica, sans-serif !important
+	font-size: 1em !important
+	border: solid 0.1em #b1b4b9
+	border-radius: 0.3em
+	background: #FFFFFF
+input[class=submit], .button-red
+	margin: 0
+	padding: 0.5em 1.5em !important
+	display: inline-block
+	text-transform: uppercase
+	font-weight: bold
+	border-radius: 0.3em
+	cursor: pointer      
+	color: #FFFFFF
+	border: 0.1em solid #FFFFFF
+	box-shadow: 0 0.1em 0.4em rgba(0, 0, 0, 0.27), 0 0 4em rgba(0, 0, 0, 0.06) inset
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ed3237+0,cd070d+100 */
+	background: #0099FF
+	background: -moz-linear-gradient(left,  #0099FF 0%, #0271bb 100%)
+	background: -webkit-linear-gradient(left,  #0099FF 0%,#0271bb 100%)
+	background: linear-gradient(to right,  #0099FF 0%,#0271bb 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0099FF', endColorstr='#0271bb',GradientType=1 )
+	&:hover
+		color: #FFFFFF
+		text-decoration: none
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ed3237+0,cd070d+100 */
+		background: #0271bb
+		background: -moz-linear-gradient(left,  #0271bb 0%, #0099FF 100%)
+		background: -webkit-linear-gradient(left,  #0271bb 0%,#0099FF 100%)
+		background: linear-gradient(to right,  #0271bb 0%,#0099FF 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0271bb', endColorstr='#0099FF',GradientType=1 )
+.clearing
+	height: 0px
+	clear: both
+.container
+	position: relative !important
+	margin: 0 auto !important
+	padding: 0 !important
+	max-width: 1110px !important
+	min-width: 320px !important
+.padding-05em
+	padding: 0.5em !important
+.margin-top-1em
+	margin-top: 1em !important
+.indent
+	padding: 1em 0
+
+/* Стили основной разметики сайта */	
+#site-wrapper
+	position: relative
+	display: flex
+	flex-direction: column		
+	overflow: hidden
+	margin: 0
+	padding: 0
+	min-width: 320px
+	height: 100vh
+
+/* Стили для блока шапка */	
+.header_row
+	position: relative
+	margin: 0
+	padding: 0.5em
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	.header_logo
+		display: flex
+		flex-direction: row
+		flex: 0 0 55%
+		.logo_title
+			flex: 0 0 70%
+			text-align: center
+			align-self: center
+			text-transform: uppercase
+			font-weight: bold
+	.header_button_service
+		display: flex
+		flex: 0 0 45%
+		flex-wrap: wrap
+		.service_item
+			padding: 0.5% 1%
+			flex: 0 0 48%
+			align-self: center
+			a
+				display: block
+				padding: 0.3em
+				border-radius: 0.3em
+				background: #F5F5F5
+				color: #2B2A29
+				font-weight: bold
+				text-decoration: none
+				box-shadow: 0.1em 0.1em 0.3em 0.02em #777676
+				&:hover
+					background: #0099FF
+					color: #FFFFFF
+				img
+					margin: 0 1em 0 0
+					padding: 0
+					width: 2.5em
+					border-radius: 2em
+					vertical-align: middle
+					overflow: hidden
+.cont
+	display: flex
+	height: 10em
+	border: 0.1em solid #00FF00
+	.item
+		padding: 1em
+		border: 0.1em solid #FF0000
+/* Стили для блока меню */
+.header_menu
+	margin: 0
+	padding: 0
+	background: #0099FF
+	min-width: 320px
+	nav
+		position: relative
+		margin: 0
+		padding: 0
+		z-index: 101
+		ul.menu_list
+			position: relative
+			display: flex
+			margin: 0
+			padding: 0
+			list-style: none
+			justify-content: center
+			li	
+				list-style: none
+				border-radius: 0.3em 0.3em 0 0
+				a
+					display: block
+					padding: 1em
+					color: #FFFFFF
+					text-decoration: none
+					font-weight: bold
+				ul
+					margin: 0
+					padding: 0.5em 0
+					display: none
+					position: absolute
+					background: #DC3820
+					border-radius: 0 0.3em 0.3em 0.3em
+				&:hover
+					background: #DC3820
+					ul
+						display: block
+						li
+							font-size: 0.9em
+							border-radius: 0
+							a
+								padding: 1em 1em 1em 3.5em
+								font-weight: normal
+								background: url(../images/icon_point_menu.png) no-repeat 0.5em center
+								background-size: 1.8em
+							&:hover
+								background: #F9482E
+
+/* Стили для баннера основного */
+.banner_main
+	position: relative
+	margin: 0
+	padding: 0
+	width: 100%
+	ul.banner_main_list
+		display: block
+		margin: 0
+		padding: 0
+		list-style: none
+		li.banner_item
+			display: block
+			margin: 0
+			padding: 0			
+			list-style: none
+			border: 0.05em solid #FFFFFF
+			background-size: 100% auto		
+			box-shadow: 0 0.1em 0.4em rgba(0, 0, 0, 0.27), 0 0 4em rgba(0, 0, 0, 0.06) inset	
+			border-radius: 0.3em
+			overflow: hidden
+			img
+				display: block
+	ul.banner_navigation
+		margin: 0
+		padding: 0
+		position: absolute
+		z-index: 101
+		list-style: none
+		li.navigation_item
+			margin: 0
+			padding: 0
+			list-style: none
+			a
+				display: block
+				margin: 0
+				padding: 0
+				width: 5em
+				height: 0.5em
+				border-radius: 10em
+				background: #0099FF
+				color: transparent
+
+
+
+
+
+/* Стили для разных разрешений */
+@media screen and (min-width: 0px) and (max-width: 1280px)
+
+
+@media screen and (min-width: 0px) and (max-width: 1024px)
+
+
+@media screen and (min-width: 0px) and (max-width: 768px)
+
+
+@media screen and (min-width: 0px) and (max-width: 600px)
+
+
+@media screen and (min-width: 0px) and (max-width: 480px)
+
+
+@media screen and (min-width: 0px) and (max-width: 320px)

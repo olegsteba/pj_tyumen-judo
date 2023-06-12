@@ -35,15 +35,16 @@ a
 h1, h2, h3, h4, h5, h6
 	margin: 0.5em 0.2em
 	padding: 0.2em 0.5em
-	color: #0099FF !important
+	color: #0099FF
 	text-align: center
-	font-weight: normal
+	font-weight: bold
 	text-transform: uppercase
-	font-weight: normal
 	border-bottom: 0.1em dotted #0099FF
 	display: inline-block
 h1
 	font-size: 1.4em
+h2
+	font-size: 1.2em
 hr
 	border: #0099FF 0.1em dashed
 input, textarea, select
@@ -244,7 +245,7 @@ input[class=submit], .button-red
 				margin: 0
 				padding: 0
 				width: 5em
-				height: 0.5em
+				height: 0.3em
 				border-radius: 10em
 				background: #0099FF
 				color: transparent
@@ -275,20 +276,94 @@ input[class=submit], .button-red
 			background: #FFFFFF url(../images/cursor_left.png) no-repeat center center
 			background-size: 2.5em
 
+/* Стили для блока Ближайшие события */
+section.upcoming__events
+	display: flex
+	flex-direction: column
+	.events__head__wrapper
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: space-between
+		.events__url__all
+			a
+				color: #2B2A29
+			img
+				width: 1.5em
+	.events__content__wrapper
+		display: flex
+		flex-direction: row
+		flex-wrap: nowrap
+		article.event_item
+			position: relative
+			margin: 0 0.2em
+			padding: 0
+			flex: 1 1 33.33%
+			border: 0.05em solid #FFFFFF
+			background-size: 100% auto		
+			box-shadow: 0 0.1em 0.4em rgba(0, 0, 0, 0.27), 0 0 4em rgba(0, 0, 0, 0.06) inset	
+			border-radius: 0.3em
+			overflow: hidden
+			.event_image
+				margin: 0
+				padding: 0
+				overflow: hidden
+				background: #000000
+				img
+					opacity: 0.6
+					display: block	
+			.event_content
+				position: absolute
+				top: 10%
+				left: 5%
+				color: #FFFFFF
+				font-size: 0.9em
+				height: 80%
+				h3
+					margin: 0
+					padding: 0
+					font-size: 1em
+					color: #FFFFFF
+					text-align: left
+					border-bottom: none
+					height: 2.4em
+					overflow: hidden
+				a
+					color: #FFFFFF
+				.event_content_date
+					line-height: 1.4em
+				.event_content_url
+					position: absolute
+					bottom: 0
+
+
 /* Стили для разных разрешений */
 @media screen and (min-width: 0px) and (max-width: 1280px)
-
+	.site__wrapper
+		margin: 0
+		padding: 0
 
 @media screen and (min-width: 0px) and (max-width: 1024px)
-
+	.site__wrapper
+		margin: 0
+		padding: 0
 
 @media screen and (min-width: 0px) and (max-width: 768px)
-
+	.site__wrapper
+		margin: 0
+		padding: 0
 
 @media screen and (min-width: 0px) and (max-width: 600px)
-
+	.site__wrapper
+		margin: 0
+		padding: 0
 
 @media screen and (min-width: 0px) and (max-width: 480px)
-
+	.site__wrapper
+		margin: 0
+		padding: 0
 
 @media screen and (min-width: 0px) and (max-width: 320px)
+	.site__wrapper
+		margin: 0
+		padding: 0

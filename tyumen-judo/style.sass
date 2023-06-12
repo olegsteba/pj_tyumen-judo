@@ -1,13 +1,13 @@
 *
-	scrollbar-color: #0099FF #DC3820
+	scrollbar-color: #DC3820 #0099FF
 	scrollbar-width: thin
 *::-webkit-scrollbar
 	height: 0.5em
 	width: 0.5em
 *::-webkit-scrollbar-track
-	background: #DC3820
+	background: #0099FF
 *::-webkit-scrollbar-thumb
-	background-color: #0099FF
+	background-color: #DC3820
 
 html, body
 	margin: 0
@@ -97,11 +97,11 @@ input[class=submit], .button-red
 	padding: 1em 0
 
 /* Стили основной разметики сайта */	
-#site-wrapper
+.site__wrapper
 	position: relative
 	display: flex
 	flex-direction: column		
-	overflow: hidden
+//	overflow: hidden
 	margin: 0
 	padding: 0
 	min-width: 320px
@@ -152,13 +152,7 @@ input[class=submit], .button-red
 					border-radius: 2em
 					vertical-align: middle
 					overflow: hidden
-.cont
-	display: flex
-	height: 10em
-	border: 0.1em solid #00FF00
-	.item
-		padding: 1em
-		border: 0.1em solid #FF0000
+
 /* Стили для блока меню */
 .header_menu
 	margin: 0
@@ -232,13 +226,17 @@ input[class=submit], .button-red
 			img
 				display: block
 	ul.banner_navigation
-		margin: 0
+		margin: 0 0 0 0
 		padding: 0
 		position: absolute
 		z-index: 101
 		list-style: none
+		display: flex
+		justify-content: center
+		bottom: 5%
+		width: 100%
 		li.navigation_item
-			margin: 0
+			margin: 0 0.25em
 			padding: 0
 			list-style: none
 			a
@@ -250,10 +248,32 @@ input[class=submit], .button-red
 				border-radius: 10em
 				background: #0099FF
 				color: transparent
-
-
-
-
+			&.active
+				a
+					background: #F9482E
+	.banner_next_prev
+		position: absolute
+		top: 50%
+		width: 100%
+		a
+			position: absolute
+			display: block
+			margin: 0
+			padding: 0.2em
+			width: 3em
+			height: 3em
+			float: left
+			text-decoration: none
+			border-radius: 0.3em
+			background: #FFFFFF
+		a.next
+			right: 1em
+			background: #FFFFFF url(../images/cursor_right.png) no-repeat center center
+			background-size: 2.5em
+		a.prev
+			left: 1em
+			background: #FFFFFF url(../images/cursor_left.png) no-repeat center center
+			background-size: 2.5em
 
 /* Стили для разных разрешений */
 @media screen and (min-width: 0px) and (max-width: 1280px)

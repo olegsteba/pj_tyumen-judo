@@ -130,6 +130,14 @@ input[class=submit]:hover, .button-red:hover {
   padding: 1em 0;
 }
 
+.text__strong {
+  font-weight: bold !important;
+}
+
+.text__normal {
+  font-weight: normal !important;
+}
+
 /* Стили основной разметики сайта */	
 .site__wrapper {
   position: relative;
@@ -149,32 +157,32 @@ input[class=submit]:hover, .button-red:hover {
 .header_row .header_logo {
   display: flex;
   flex-direction: row;
-  flex: 0 0 55%;
+  flex: 0 0 40%;
 }
 .header_row .header_logo .logo_title {
   flex: 0 0 70%;
-  text-align: center;
+  text-align: left;
   align-self: center;
   text-transform: uppercase;
-  font-weight: bold;
+  font-size: 0.9em;
 }
 .header_row .header_button_service {
   display: flex;
-  flex: 0 0 45%;
+  flex: 0 0 60%;
   flex-wrap: wrap;
 }
 .header_row .header_button_service .service_item {
   padding: 0.5% 1%;
-  flex: 0 0 48%;
+  flex: 0 0 31.33%;
   align-self: center;
 }
 .header_row .header_button_service .service_item a {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   padding: 0.3em;
   border-radius: 0.3em;
   background: #F5F5F5;
   color: #2B2A29;
-  font-weight: bold;
   text-decoration: none;
   box-shadow: 0.1em 0.1em 0.3em 0.02em #777676;
 }
@@ -183,12 +191,15 @@ input[class=submit]:hover, .button-red:hover {
   color: #FFFFFF;
 }
 .header_row .header_button_service .service_item a img {
-  margin: 0 1em 0 0;
+  margin: 0 0.5em 0 0;
   padding: 0;
   width: 2.5em;
   border-radius: 2em;
   vertical-align: middle;
   overflow: hidden;
+}
+.header_row .header_button_service .service_item a div {
+  align-self: center;
 }
 
 /* Стили для блока меню */
@@ -405,6 +416,27 @@ section.upcoming__events .events__content__wrapper article.event_item .event_con
 section.upcoming__events .events__content__wrapper article.event_item .event_content .event_content_url {
   position: absolute;
   bottom: 0;
+}
+
+/* стили для блока новости */
+.news {
+  margin: 0;
+  padding: 1.5em 0;
+  background: #0099FF;
+  min-width: 320px;
+}
+.news .news__content__wrapper {
+  margin: 0;
+  padding: 1em;
+  display: flex;
+  background: #FFFFFF;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.news .news__content__wrapper .news_item {
+  padding: 0.5% 1%;
+  flex: 0 0 23%;
+  align-self: center;
 }
 
 /* Стили для разных разрешений */

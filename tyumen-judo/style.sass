@@ -128,7 +128,6 @@ input[class=submit], .button-red
 			text-align: left
 			align-self: center
 			text-transform: uppercase
-			font-size: 0.9em
 	.header_button_service
 		display: flex
 		flex: 0 0 60%
@@ -193,12 +192,12 @@ input[class=submit], .button-red
 					position: absolute
 					background: #DC3820
 					border-radius: 0 0.3em 0.3em 0.3em
+					font-size: 0.9em
 				&:hover
 					background: #DC3820
 					ul
 						display: block
 						li
-							font-size: 0.9em
 							border-radius: 0
 							a
 								padding: 1em 1em 1em 3.5em
@@ -315,14 +314,13 @@ section.upcoming__events
 				overflow: hidden
 				background: #000000
 				img
-					opacity: 0.6
+					opacity: 0.55
 					display: block	
 			.event_content
 				position: absolute
 				top: 10%
 				left: 5%
 				color: #FFFFFF
-				font-size: 0.9em
 				height: 80%
 				h3
 					margin: 0
@@ -342,7 +340,7 @@ section.upcoming__events
 					bottom: 0
 
 /* стили для блока новости */
-.news
+section.news
 	margin: 0
 	padding: 1.5em 0
 	background: #0099FF
@@ -357,8 +355,94 @@ section.upcoming__events
 		.news_item
 			padding: 0.5% 1%
 			flex: 0 0 23%
-			align-self: center
-			
+			.news__date
+				color: #0099FF
+			.news__title
+				font-weight: bold
+				overflow: hidden
+				height: 2.6em
+			.news__image
+				margin: 0
+				padding: 0
+				text-align: center
+				img
+					border: 0.05em solid #FFFFFF
+					background-size: 100% auto		
+					box-shadow: 0 0.1em 0.4em rgba(0, 0, 0, 0.27), 0 0 4em rgba(0, 0, 0, 0.06) inset	
+					border-radius: 0.3em
+					overflow: hidden
+					display: inline-block
+			.news__description
+				text-align: justify
+				overflow: hidden
+				height: 4.6em
+				display: -webkit-box
+				-webkit-line-clamp: 4
+				-webkit-box-orient: vertical
+
+/* Стили для блока фотогалерея */
+section.photos
+	display: flex
+	flex-direction: column
+	.photos__head__wrapper
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: space-between
+		.photos__url__all
+			a
+				color: #2B2A29
+			img
+				width: 1.5em
+	.photos__content__wrapper
+		display: flex
+		flex-direction: row
+		flex-wrap: nowrap
+		.photo_item
+			position: relative
+			margin: 0 0.2em
+			padding: 0
+			flex: 1 1 33.33%
+			border: 0.05em solid #FFFFFF
+			background-size: 100% auto		
+			box-shadow: 0 0.1em 0.4em rgba(0, 0, 0, 0.27), 0 0 4em rgba(0, 0, 0, 0.06) inset	
+			border-radius: 0.3em
+			overflow: hidden
+			min-width: 269px
+			.photo_image
+				margin: 0
+				padding: 0
+				overflow: hidden
+				background: #000000
+				img
+					display: block	
+			.photo_content
+				position: absolute
+				top: 10%
+				left: 5%
+				color: #FFFFFF
+				height: 80%
+				h3
+					margin: 0
+					padding: 0
+					font-size: 1em
+					color: #FFFFFF
+					text-align: left
+					border-bottom: none
+					height: 2.4em
+					overflow: hidden
+	
+/* Стили для блока баннер госуслуг */
+section.gosuslugi__banner
+	position: relative
+	margin: 0 0.2em
+	padding: 0
+	flex: 1 1 33.33%
+	border: 0.05em solid #FFFFFF
+	background-size: 100% auto		
+	box-shadow: 0 0.1em 0.4em rgba(0, 0, 0, 0.27), 0 0 4em rgba(0, 0, 0, 0.06) inset	
+	border-radius: 0.3em
+	overflow: hidden	
 
 /* Стили для разных разрешений */
 @media screen and (min-width: 0px) and (max-width: 1280px)
